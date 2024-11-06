@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8;
@@ -64,10 +64,10 @@ form input[type="submit"]:hover {
 
 /* Estilos para tablas */
 table {
-    width: 100%;
-    max-width: 600px;
+    width: 80%; /* Ancho de la tabla */
+    max-width: 1200px;
     border-collapse: collapse;
-    background-color: #ffffff;
+    background-color: white;
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -90,19 +90,28 @@ tr:nth-child(even) {
     background-color: #f7f9fc;
 }
 
-/* Botones dentro de la tabla */
+/* Ajuste de campo de entrada en columna Comprar */
+table form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 table form input[type="number"] {
-    width: 50px;
-    padding: 8px;
+    width: 85px; /* Ancho reducido */
+    padding: 5px; /* Padding reducido */
     border: 1px solid #ccd1d9;
     border-radius: 5px;
+    text-align: center;
+    font-size: 14px; /* Tamaño de fuente más pequeño */
 }
 
 table form input[type="submit"] {
     background-color: #34699a;
     color: #ffffff;
     border: none;
-    padding: 8px 12px;
+    padding: 6px 10px; /* Botón más pequeño */
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;

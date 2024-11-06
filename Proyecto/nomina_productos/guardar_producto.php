@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registrar Producto</title>
-    <link rel="stylesheet" href="style33.css">
+    <link rel="stylesheet" href="styleproducto.css">
 </head>
 <body>
     <h2>Registrar Producto</h2>

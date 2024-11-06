@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Ver Productos</title>
-<link rel="stylesheet" href="style33.css">
+<link rel="stylesheet" href="styleproducto.css">
 </head>
 <body>
     <h2>Productos</h2>
