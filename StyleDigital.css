@@ -22,7 +22,9 @@ header {
 }
 
 .header-banner {
-    background-color: #222;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
     padding: 100px 0;
