@@ -6,48 +6,8 @@
     <title>Portafolio Digital</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .section-header {
-            color: #17a2b8;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-        .card-section {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            border: none;
-        }
-        .card-section:hover {
-            transform: scale(1.05);
-        }
-        .btn-download {
-            color: white;
-            background-color: #17a2b8;
-        }
-        .navbar-dark .navbar-nav .nav-link {
-            color: rgba(255,255,255,.8);
-            transition: color 0.2s;
-        }
-        .navbar-dark .navbar-nav .nav-link:hover {
-            color: white;
-        }
-
-        .header-banner {
-            background-image: url('fondo.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-        }
-        .header-banner h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-    </style>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="StyleDigital.css">
 </head>
 <body>
     <!-- Cabecera con banner de fondo -->
@@ -75,56 +35,43 @@
     <main class="container my-5">
         <!-- Proyectos -->
         <section id="proyectos" class="mb-5">
-            <h2 class="text-center">Proyectos</h2>
-            <p class="text-center">Aquí puedes ver algunos de los proyectos en los que he trabajado, tanto individual como en junto a un equipo.</p>
+            <h2 class="section-header">Proyectos</h2>
+            <p class="text-center">Aquí puedes ver algunos de los proyectos en los que he trabajado, tanto individual como en equipo.</p>
             <div class="row">
                 <!-- Proyecto 1 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <center>
+                    <div class="card card-section h-100">
+                        <img src="compra.png" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Tienda</h5>
                             <p class="card-text">Sistema de compra y venta de una tienda.</p>
-                            </center>
-                            <img src="compra.png" class="card-img-top" alt="Proyecto 1">
                         </div>
                     </div>
                 </div>
                 <!-- Proyecto 2 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <center>
+                    <div class="card card-section h-100">
+                        <img src="Banco.png" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Banco</h5>
                             <p class="card-text">Formulario de inscripción de un banco digital.</p>
-                            </center>
-                            <img src="Banco.png" class="card-img-top" alt="Proyecto 2">
                         </div>
                     </div>
                 </div>
                 <!-- Proyecto 3 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <center>
+                    <div class="card card-section h-100">
+                        <img src="formulario.png" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Formulario</h5>
-                            <p class="card-text">Sistema de Formulario registro .</p>
-                            </center>
-                            <img src="formulario.png" class="card-img-top" alt="Proyecto 3">
+                            <p class="card-text">Sistema de Formulario de registro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-15 mb-4">
-                <div class="card card-section h-100">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Si quiere ver mas de mis proyectos puede ir a:</h5>
-                        <a href="https://github.com/Jerex17/proyecto" class="btn btn-download" target="_blank">Mi Repositorio GitHub</a>
-                    </div>
-                </div>
+            <div class="text-center">
+                <a href="https://github.com/Jerex17/proyecto" class="btn btn-download" target="_blank">Mi Repositorio GitHub</a>
             </div>
-        </div>
-
         </section>
 
         <!-- Estudios -->
@@ -134,9 +81,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Formación Académica</h5>
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-check-circle text-info"></i> Clases de ingles intermedio - INFOTEP</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Técnico en Desarrollo y Administración de Aplicaciones Informáticas - Centro Educativo Politécnico Virgen de la Altagracia.</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Curso de JavaScript con Node.js - Aprende.org</li>
+                        <li>Clases de inglés intermedio - INFOTEP</li>
+                        <li>Técnico en Desarrollo y Administración de Aplicaciones Informáticas - Centro Educativo Politécnico Virgen de la Altagracia.</li>
+                        <li>Curso de JavaScript con Node.js - Aprende.org</li>
+                    </ul>
                     <a href="c:\Users\JEREMIAS P\OneDrive\Documents\GitHub\Portafolio\567b7dae-704d-4a08-a71c-5001bd9c8423_certificado.pdf" download class="btn btn-download mt-3">Ver diploma de JavaScript/Descargar</a>
                 </div>
             </div>
@@ -148,7 +96,7 @@
             <div class="card card-section mb-4">
                 <div class="card-body">
                     <h5 class="card-title">Rasgos personales</h5>
-                    <p class="card-text">Me destaco por mi alto desempeño en situaciones de análisis y apresuradas.<br> Soy una persona Creativa, Respetuosa, Inteligente, Sociable, y Compañerista.</p>
+                    <p>Me destaco por mi alto desempeño en situaciones de análisis y presión. Soy una persona creativa, respetuosa, inteligente, sociable y compañerista.</p>
                 </div>
             </div>
         </section>
@@ -160,9 +108,9 @@
                 <div class="card-body">
                     <h5 class="card-title">Experiencia Laboral</h5>
                     <ul>
-                        <li><i class="fas fa-check-circle text-info"></i> Pasantía en diferentes areas - Hospital de la ciudad Juan Bosh.</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Asistente de administración - Ferreteria Ambar.</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Asistente de tapicería - Tapicería Maestro.</li>
+                        <li>Pasantía en diferentes áreas - Hospital de la ciudad Juan Bosch.</li>
+                        <li>Asistente de administración - Ferretería Ámbar.</li>
+                        <li>Asistente de tapicería - Tapicería Maestro.</li>
                     </ul>
                 </div>
             </div>
@@ -175,13 +123,13 @@
                 <div class="card-body">
                     <h5 class="card-title">Habilidades y Competencias</h5>
                     <ul>
-                        <li><i class="fas fa-check-circle text-info"></i> Sociable.</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Buen pensamiento analítico .</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Bueno trabajando en equipo .</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Manejo de Canva.</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Dominio intermedio del inglés.</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Manejo de Microsoft Office.</li>
-                        <li><i class="fas fa-check-circle text-info"></i> Musico.</li>
+                        <li>Sociable.</li>
+                        <li>Buen pensamiento analítico.</li>
+                        <li>Capacidad de trabajo en equipo.</li>
+                        <li>Manejo de Canva.</li>
+                        <li>Dominio intermedio del inglés.</li>
+                        <li>Manejo de Microsoft Office.</li>
+                        <li>Músico.</li>
                     </ul>
                 </div>
             </div>
@@ -193,63 +141,53 @@
             <div class="card card-section mb-4">
                 <div class="card-body">
                     <h5 class="card-title">Mi Currículo</h5>
-                    <p class="card-text">Debajo esta mi currículo descargable en español como en inglés<br> para más detalles.</p>
+                    <p>Descarga mi currículo en español e inglés para más detalles.</p>
                     <a href="curriculo.docx" download class="btn btn-download">Descargar Currículo</a>
                     <a href="curriculum.pdf" download class="btn btn-download">Download Curriculum</a>
                 </div>
             </div>
-
         </section>
-                <!-- Nueva sección: Colaboraciones -->
-                <section id="colaboraciones" class="mb-5">
-                    <h2 class="section-header text-center">Equipo La Fundita</h2>
-                    <p class="text-center">Aquí puedes ver algunos de los proyectos y repositorios de mis compañeros con quienes he colaborado.</p>
-                    <div class="row">
-                        <!-- Colaborador 1 -->
-                        <div class="col-md-3 mb-4">
-                            <div class="card card-section h-100">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Efren Baldera</h5>
-                                    <a href="https://zetitadev.github.io/Portafolio/index.html" class="btn btn-download" target="_blank">Ver Repositorio</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Colaborador 2 -->
-                        <div class="col-md-3 mb-4">
-                            <div class="card card-section h-100">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Seline Sanchez</h5>
-                                    <a href="https://github.com/selinesd/PortafolioSeli" class="btn btn-download" target="_blank">Ver Repositorio</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Colaborador 3 -->
-                        <div class="col-md-3 mb-4">
-                            <div class="card card-section h-100">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Miguel Alberto</h5>
-                                    <a href="https://github.com/Miguelon574/Portafolio" class="btn btn-download" target="_blank">Ver Repositorio</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Colaborador 4 -->
-                        <div class="col-md-3 mb-4">
-                            <div class="card card-section h-100">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Luis Felipe</h5>
-                                    <a href="https://github.com/Felplex01/PortafolioLuis.git" class="btn btn-download" target="_blank">Ver Repositorio</a>
-                                </div>
-                            </div>
-                        </div>
+
+        <!-- Colaboraciones -->
+        <section id="colaboraciones" class="mb-5">
+            <h2 class="section-header text-center">Equipo La Fundita</h2>
+            <p class="text-center">Proyectos de compañeros con quienes he colaborado.</p>
+            <div class="row">
+                <!-- Colaboradores -->
+                <div class="col-md-3 mb-4">
+                    <div class="card card-section h-100 text-center">
+                        <h5 class="card-title">Efren Baldera</h5>
+                        <a href="https://zetitadev.github.io/Portafolio/index.html" class="btn btn-download" target="_blank">Ver Repositorio</a>
                     </div>
-                </section>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card card-section h-100 text-center">
+                        <h5 class="card-title">Seline Sanchez</h5>
+                        <a href="https://github.com/selinesd/PortafolioSeli" class="btn btn-download" target="_blank">Ver Repositorio</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card card-section h-100 text-center">
+                        <h5 class="card-title">Miguel Alberto</h5>
+                        <a href="https://github.com/Miguelon574/Portafolio" class="btn btn-download" target="_blank">Ver Repositorio</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card card-section h-100 text-center">
+                        <h5 class="card-title">Luis Felipe</h5>
+                        <a href="https://github.com/Felplex01/PortafolioLuis.git" class="btn btn-download" target="_blank">Ver Repositorio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; La Fundita - 2024</p>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Mi Portafolio Digital</p>
     </footer>
 
-    <!-- Bootstrap JS y jQuery -->
+    <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
